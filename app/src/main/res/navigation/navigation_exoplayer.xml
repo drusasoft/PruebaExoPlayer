@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_exoplayer"
+    app:startDestination="@id/fragment_Main_Menu">
+
+    <fragment
+        android:id="@+id/fragment_Main_Menu"
+        android:name="com.exmaple.pruebaexoplayer.fragments.Fragment_Main_Menu"
+        android:label="Fragment_Main_Menu" >
+
+        <action
+            android:id="@+id/irfragmentReproductor"
+            app:destination="@id/fragmentReproductor" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentReproductor"
+        android:name="com.exmaple.pruebaexoplayer.fragments.FragmentReproductor"
+        android:label="FragmentReproductor" />
+
+</navigation>

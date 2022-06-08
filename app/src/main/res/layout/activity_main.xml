@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/indigo_500"
+        android:elevation="4dp"
+        app:theme="@style/miToolBarStyle"
+        app:titleTextAppearance="@style/miToolBarTextStyle"
+        app:titleTextColor="@color/white"/>
+
+
+    <fragment
+        android:id="@+id/NavHostFragmentExoPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:navGraph="@navigation/navigation_exoplayer"
+        app:defaultNavHost="true"/>
+
+   <!-- <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/NavHostFragmentExoPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:navGraph="@navigation/navigation_exoplayer"
+        app:defaultNavHost="true"/>-->
+
+</LinearLayout>
