@@ -32,6 +32,18 @@ class MainActivity : AppCompatActivity()
 
         //Añadimos el navContrller a la Toolbar(Actionbar), Para que se muestre la flecha volver y el titulo del frgament en la toolbar cuando se navega a otros fragments desde el fragment home
         NavigationUI.setupWithNavController(binding.toolbarMainMenu, navController)
+
+        //Listener que se ejecuta cuando se navega entre los fragment
+        navController.addOnDestinationChangedListener{ controller, destination, arguments ->
+
+            when(destination.id)
+            {
+                controller.graph.startDestinationId->{ supportActionBar!!.title = "Menu Principal" }
+                R.id.fragmentReproductor->{ supportActionBar!!.title = "Reproductor"}
+            }
+
+        }
+
     }
 
 }

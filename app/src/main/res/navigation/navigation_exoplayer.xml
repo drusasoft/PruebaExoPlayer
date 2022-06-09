@@ -11,13 +11,24 @@
 
         <action
             android:id="@+id/irfragmentReproductor"
-            app:destination="@id/fragmentReproductor" />
+            app:destination="@id/fragmentReproductor"/>
 
     </fragment>
 
     <fragment
         android:id="@+id/fragmentReproductor"
         android:name="com.exmaple.pruebaexoplayer.fragments.FragmentReproductor"
-        android:label="FragmentReproductor" />
+        android:label="FragmentReproductor" >
+
+        <action
+            android:id="@+id/irReproductorFullScreen"
+            app:destination="@id/reproductorFullScreen"/>
+
+    </fragment>
+
+    <activity
+        android:id="@+id/reproductorFullScreen"
+        android:name="com.exmaple.pruebaexoplayer.activities.ReproductorFullScreen"
+        android:label="ReproductorFullScreen"/>
 
 </navigation>

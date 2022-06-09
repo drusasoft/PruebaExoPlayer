@@ -42,7 +42,7 @@ dependencies {
 
     def version_coroutine = "1.5.2"
     def nav_version = "2.4.2"
-    def exo_player_version = '2.17.1'
+    def exo_player_version = "2.17.1"
 
 
     implementation 'androidx.core:core-ktx:1.8.0'
@@ -53,6 +53,9 @@ dependencies {
 
     //Liberia para ViewModel
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    //Libreria para usar la Clase PreferenceManager (Preferencias de Usuario)
+    implementation "androidx.preference:preference-ktx:1.2.0"
 
     //Coroutines
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2"
@@ -65,10 +68,8 @@ dependencies {
     implementation "androidx.navigation:navigation-ui:$nav_version"
 
 
-    //Librerias par ExoPlayer
-    implementation "com.google.android.exoplayer:exoplayer-core:$exo_player_version"
-    implementation "com.google.android.exoplayer:exoplayer-dash:$exo_player_version"
-    implementation "com.google.android.exoplayer:exoplayer-core:$exo_player_version"
+    //Libreria par ExoPlayer
+    implementation "com.google.android.exoplayer:exoplayer:$exo_player_version"
 
 
     //Libreria para Test

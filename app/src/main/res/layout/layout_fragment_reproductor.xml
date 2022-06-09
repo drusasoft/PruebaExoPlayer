@@ -2,13 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/black">
 
     <TextView
+        android:id="@+id/textViewFullScreen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Ver en Pantalla Completa"
         android:textAlignment="center"
-        android:text="Reproctor ExoPlayer"/>
+        android:textColor="@color/white"
+        android:clickable="true"
+        android:visibility="invisible"/>
+
+    <com.google.android.exoplayer2.ui.StyledPlayerView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 
 </LinearLayout>
